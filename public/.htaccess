@@ -1,0 +1,15 @@
+# Fichier ressources à rechercher lorsque le client envoie une requête pour ce répertoire
+DirectoryIndex index.html
+
+# Activation de l'execution du moteur de réécriture
+RewriteEngine On 
+
+# Définition de l'URL de base pour les réécritures du dossier bublic
+RewriteBase /
+
+# Définition des conditions qui doivent être satisfaites pour que la réécriture soit effectuée
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-d
+
+# Définition des règles pour le moteur de réecriture
+RewriteRule ^(.*)$ public/index.php [L]

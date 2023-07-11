@@ -1,0 +1,32 @@
+{
+    "name": "yohan/vega_poo",
+    "description": "learn poo in php",
+    "type": "project",
+    "license": "MIT",
+    "version": "1.0.0",
+    "keywords": ["php", "php8", "nextformation", "web", "framework"],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Yoyo77",
+            "email": "yohan.georgelin@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "symfony/var-dumper": "^6.3"
+    },
+    "require": {
+        "php-di/php-di": "^7.0",
+        "vlucas/phpdotenv": "^5.5"
+    }
+}
