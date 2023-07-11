@@ -24,4 +24,8 @@ use App\Kernel;
 require __DIR__ . "/../config/bootstrap.php";
 
 // Création d'une nouvelle instance du noyau de l'application 
-$kernel = new Kernel();
+$kernel = new Kernel($container);
+
+$response = $kernel->handleRequest();
+$response->send();
+dd($response);
